@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const PORT = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 // set up a variable called port - the variable will be called 3000
 
 app.use('/', indexRouter);
@@ -43,6 +43,6 @@ app.use(function(err, req, res, next) {
 
 //module.exports = app;
 
-app.listen(PORT, ()=> {
-  console.log(`app is running @ ${PORT}`);
+app.listen(port, ()=> {
+  console.log(`app is running @ ${port}`);
 });
