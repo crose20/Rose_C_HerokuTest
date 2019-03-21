@@ -12,4 +12,6 @@ var context = {
   benefits: "Purifies and humidifies while infusing your air with the healing power of plants. Releases negative ions to reduce dust, pet dander and other airborne allergens (like dust mite matter). Refreshes the air in your space using 100% natural essential oil blends. Preserves the full integrity and properties of your essential oil blends using a heat-free system. Gives your atmosphere the same refreshing feeling as standing near a waterfall.",
 };
 
+var html = template(context);
+
 module.exports = router;
